@@ -1,3 +1,90 @@
 .second {
-  
+}
+.article {
+  padding-block: 5rem;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+  &__list {
+    margin-left: auto;
+    max-width: 600px;
+    li {
+      position: relative;
+      margin-top: 0.8rem;
+    }
+  }
+  &__end {
+    max-width: 900px;
+    text-wrap: balance;
+    margin-top: 4rem;
+  }
+}
+
+#html {
+  span,
+  code,
+  .article__header,
+  li::marker {
+    color: var(--html-color);
+    svg {
+      fill: var(--html-color);
+      stroke: var(--html-color);
+    }
+  }
+}
+#css {
+  span,
+  code,
+  .article__header,
+  li::marker {
+    color: var(--css-color);
+  }
+}
+#js {
+  span,
+  code,
+  .article__header,
+  li::marker {
+    color: var(--js-color);
+  }
+}
+
+aside {
+  div {
+    display: flex;
+    background-color: var(--black-op);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  a {
+    padding: 0.25rem 0.8rem;
+    max-width: 4rem;
+    display: block;
+    transition: 0.3s linear all;
+    &[href='#html']:hover,
+    &[href='#html']:focus {
+      color: var(--html-color);
+    }
+    &[href='#css']:hover,
+    &[href='#css']:focus {
+      color: var(--css-color);
+    }
+    &[href='#js']:hover,
+    &[href='#js']:focus {
+      color: var(--js-color);
+    }
+  }
 }

@@ -1,8 +1,11 @@
 .header {
+  width: 100%;
   padding: 2rem 0;
   background-color: var(--dark);
   color: var(--white);
-
+  &_scroll {
+    position: fixed;
+  }
   &__row {
     display: flex;
     justify-content: space-between;
