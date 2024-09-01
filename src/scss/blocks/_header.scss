@@ -1,0 +1,33 @@
+.header {
+  padding: 2rem 0;
+  background-color: var(--dark);
+  color: var(--white);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    ul,
+    ul li {
+      list-style: none;
+    }
+    .nav__list {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      @media (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+}

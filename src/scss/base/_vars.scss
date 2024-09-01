@@ -1,0 +1,35 @@
+:root {
+  --index: 1vh + 1vw;
+
+  --font-size: 18px;
+  --font-size-mobile: 16px;
+
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  --font-main: 'Poppins', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+
+  --black: hsl(0, 0%, 13%);
+  --dark: hsl(12, 32%, 2%);
+  --gray: hsl(0, 0%, 70%);
+  --white: hsl(0, 0%, 96%);
+  --red: hsl(12, 90%, 63%);
+  // --red-sheen: linear-gradient(
+  //   to bottom,
+  //   hsl(12, 90%, 43%),
+  //   hsla(12, 40%, 70%, 0.5) 50%,
+  //   hsl(12, 93%, 23%)
+  // );
+  --red-shadow: hsl(12, 100%, 60%);
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+
+  // --ease-elastic-in-1: cubic-bezier(0.5, -0.25, 0.75, 1);
+}
+
+// .dark {
+//   --page-bg: #252526;
+//   --text-color: #fff;
+// }
