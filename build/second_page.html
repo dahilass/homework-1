@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../img/icons/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/icons/favicon.svg" type="image/x-icon">
     <title>ДЗ | Модуль 1</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.bundle.js" defer></script>
@@ -13,19 +13,17 @@
   <div class="container">
     <div class="header__row">
       <nav class="nav header__nav">
-        <a class="logo header__logo" href="../index.html">Logo</a>
+        <a class="logo header__logo" href="index.html">Logo</a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a data-name="index" href="../index.html">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="nav__item">
-            <a data-name="second" class="blocked" href="../second_page.html"
-              >Info</a
-            >
+            <a href="second_page.html">Info</a>
           </li>
         </ul>
       </nav>
-      <button class="mobile-nav-btn">
+      <button class="mobile-nav-btn" type="button">
         <div class="nav-icon"></div>
       </button>
     </div>
@@ -34,10 +32,10 @@
 <div class="mobile-nav">
   <ul class="mobile-nav__list">
     <li class="nav__item">
-      <a data-name="inedex" href="index.html" id="home">Home</a>
+      <a href="index.html" id="home">Home</a>
     </li>
     <li class="nav__item">
-      <a data-name="second" href="second_page.html" id="second_page">Info</a>
+      <a href="second_page.html" id="second_page">Info</a>
     </li>
   </ul>
 </div>

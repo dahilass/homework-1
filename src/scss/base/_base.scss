@@ -39,17 +39,17 @@ main {
     overflow: hidden;
     transition: 0.3s linear all;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      bottom: -50%;
-      left: -50%;
-      background: var(--red-sheen);
-      transform: rotateZ(60deg) translate(-30em, 30em);
-      // animation: sheen 2s var(--ease-elastic-in-1) infinite;
-    }
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: -50%;
+    //   right: -50%;
+    //   bottom: -50%;
+    //   left: -50%;
+    //   background: var(--red-sheen);
+    //   transform: rotateZ(60deg) translate(-30em, 30em);
+    //   animation: sheen 2s var(--ease-elastic-in-1) infinite;
+    // }
     &:hover,
     &:focus {
       color: var(--black);
@@ -73,26 +73,29 @@ li[class='nav__item'] {
     padding-inline: 0.5rem;
     display: block;
     width: 100%;
-  }
-  &:not(.active):hover,
-  &:not(.active):focus {
     &::after {
-      transform: translateX(-50%);
-      opacity: 1;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 300%;
+      height: 1px;
+      bottom: 1px;
+      left: 50%;
+      transform: translateX(75%);
+      background-color: var(--red-shadow);
+      opacity: 0.25;
+      transition: 0.4s linear all;
+    }
+    &:focus {
+      &::after {
+        transform: translateX(-50%);
+        opacity: 1;
+      }
     }
   }
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 300%;
-    height: 1px;
-    bottom: 1px;
-    left: 50%;
-    transform: translateX(75%);
-    background-color: var(--red-shadow);
-    opacity: 0.25;
-    transition: 0.4s linear all;
+  &:hover a::after {
+    transform: translateX(-50%);
+    opacity: 1;
   }
 }
 ul,
