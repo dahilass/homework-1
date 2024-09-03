@@ -15,6 +15,7 @@
   }
 }
 .anchor {
+  font-size: 1rem;
   overflow: hidden;
   padding-left: 1rem;
   position: relative;
@@ -22,14 +23,15 @@
   align-items: center;
   justify-content: start;
   white-space: nowrap;
+  transition: 0.3s linear all;
 
   &::before {
     content: '↑';
     position: absolute;
     display: block;
-    left: 0;
-    top: 45%;
-    transform: translateY(-50%);
+    left: 4px;
+    top: -.18rem;
+    transition: .3s linear all;
   }
   &::after {
     content: '';
@@ -42,11 +44,13 @@
   }
   &:hover,
   &:focus {
+    text-shadow: 0px 0px 2px var(--red-shadow);
+    &::before {
+      color: var(--white);
+    }
     &::after {
       transform: translateX(-150%);
       transition: 1s ease-in-out all;
-    }
-    &::before {
     }
   }
 }

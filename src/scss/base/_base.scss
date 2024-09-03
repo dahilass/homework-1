@@ -23,7 +23,8 @@ body {
 main {
   padding: 4rem 0;
 
-  button {
+  .button {
+    min-width: 18.9rem;
     color: var(--white);
     // all: unset;
     background-color: var(--black);
@@ -60,6 +61,9 @@ main {
 }
 a {
   color: var(--red);
+  &:not(.logo) {
+    text-transform: uppercase;
+  }
 }
 li::marker {
   font-size: 1.5rem;
@@ -111,6 +115,16 @@ hr {
   background-color: var(--red);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-accent);
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
 // CLASSES
 .section__title {
   font-size: 1.6rem;
